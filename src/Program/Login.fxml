@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Program.LoginController">
+   <children>
+      <AnchorPane fx:id="loginform" prefHeight="415.0" prefWidth="314.0">
+         <children>
+            <TextField fx:id="txtuser" layoutX="59.0" layoutY="155.0" prefHeight="30.0" prefWidth="195.0" promptText="Username" styleClass="txtbox" stylesheets="@tampilan.css">
+               <font>
+                  <Font name="Gill Sans MT" size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtpass" layoutX="59.0" layoutY="194.0" prefHeight="26.0" prefWidth="195.0" promptText="Password" styleClass="txtbox" stylesheets="@tampilan.css">
+               <font>
+                  <Font name="Gill Sans MT" size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="btnLogin" layoutX="59.0" layoutY="244.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="40.0" prefWidth="195.0" styleClass="btnlogin" stylesheets="@tampilan.css" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label alignment="CENTER" layoutX="37.0" layoutY="91.0" prefHeight="57.0" prefWidth="240.0" text="Welcome User" textAlignment="CENTER" textFill="#1ebeb1">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="registrasi" layoutX="90.0" layoutY="300.0" onMouseClicked="#formRegis" styleClass="regis" stylesheets="@tampilan.css" text="Buat Akun Baru">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loginkanan" layoutX="314.0" layoutY="-3.0" prefHeight="417.0" prefWidth="300.0" style="-fx-background-color: #1ebeb1;">
+         <children>
+            <Label alignment="CENTER" layoutX="30.0" layoutY="216.0" prefHeight="57.0" prefWidth="240.0" text="LOGIN PAGE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="84.0" fitWidth="99.0" layoutX="108.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/Login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="registerkanan" layoutX="314.0" layoutY="-3.0" prefHeight="418.0" prefWidth="300.0" style="-fx-background-color: #1ebeb1;" visible="false">
+         <children>
+            <Label alignment="CENTER" layoutX="30.0" layoutY="216.0" prefHeight="57.0" prefWidth="240.0" text="REGISTER PAGE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="84.0" fitWidth="99.0" layoutX="108.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/Register.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="registerform" layoutY="6.0" prefHeight="400.0" prefWidth="314.0" visible="false">
+         <children>
+            <TextField fx:id="txtNama" layoutX="52.0" layoutY="119.0" prefHeight="30.0" prefWidth="195.0" promptText="Nama" styleClass="txtbox" stylesheets="@tampilan.css">
+               <font>
+                  <Font name="Gill Sans MT" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="regBtn" layoutX="52.0" layoutY="281.0" mnemonicParsing="false" onMouseClicked="#registrasiData" prefHeight="40.0" prefWidth="195.0" styleClass="btnlogin" stylesheets="@tampilan.css" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="52.0" layoutY="50.0" prefHeight="40.0" prefWidth="195.0" text="Register Akun" textAlignment="CENTER" textFill="#1ebeb1">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="28.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtPass" layoutX="52.0" layoutY="157.0" prefHeight="30.0" prefWidth="195.0" promptText="Password" styleClass="txtbox" stylesheets="@tampilan.css">
+               <font>
+                  <Font name="Gill Sans MT" size="14.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="txtEmail" layoutX="52.0" layoutY="236.0" prefHeight="30.0" prefWidth="195.0" promptText="E-mail" styleClass="txtbox" stylesheets="@tampilan.css">
+               <font>
+                  <Font name="Gill Sans MT" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtUsername" layoutX="52.0" layoutY="195.0" prefHeight="30.0" prefWidth="195.0" promptText="Username" styleClass="txtbox" stylesheets="@tampilan.css">
+               <font>
+                  <Font name="Gill Sans MT" size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="login" layoutX="75.0" layoutY="332.0" onMouseClicked="#formLogin" styleClass="regis" stylesheets="@tampilan.css" text="Klik Buat Login">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="welcomepage" layoutX="10.0" layoutY="13.0" prefHeight="400.0" prefWidth="600.0" visible="false">
+         <children>
+            <Button layoutX="202.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#backform" prefHeight="40.0" prefWidth="195.0" style="-fx-background-color: #1ebeb1;" text="Kembali" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="welcome" layoutX="150.0" layoutY="170.0" text="WELCOME BRO!">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnExit" layoutX="585.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="16.0" prefWidth="22.0" styleClass="btnx" stylesheets="@tampilan.css" text="x" textFill="WHITE">
+         <font>
+            <Font name="NewsGoth Lt BT Light" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="p1" disable="true" fitHeight="72.0" fitWidth="76.0" layoutX="520.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/kulkas.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nafpedia" alignment="CENTER" layoutX="325.0" layoutY="330.0" prefHeight="58.0" prefWidth="195.0" text="FRESHFROST" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Gill Sans MT Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

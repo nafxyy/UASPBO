@@ -1,0 +1,183 @@
+.txtbox{
+    -fx-text-box-border: transparent;
+    -fx-text-fill: #000000;
+}
+
+.txtbox:focused{
+    -fx-border-width : 2;
+    -fx-background-color:#ffffff;
+    -fx-focus-color : #1ebeb1;
+    -fx-background : #ffffff;
+    -fx-border-color: transparent transparent #1ebeb1 transparent;
+}
+
+.btnlogin {
+    -fx-background-color: #1ebeb1;
+    -fx-cursor: hand;
+}
+
+.btnlogin:hover{
+    -fx-background-color : #60dbd1;
+}
+
+.regis{
+    -fx-cursor: hand;
+}
+
+.regis:hover{
+    -fx-opacity : 0.5;
+}
+
+.pilihgambar{
+    -fx-background-color: BE1E2D;
+    -fx-background-radius : 0;
+    -fx-border: 2;
+    -fx-cursor: hand;
+}
+
+.pilihgambar:hover{
+    -fx-opacity : 0.5;
+}
+
+.gambar{
+    -fx-background-radius : 50;
+}
+
+.btnedit{
+    -fx-background-color: #266d96;
+    -fx-cursor: hand;
+}
+
+.btnedit:hover{
+    -fx-background-color : #3ea3de;
+}
+
+.btnhapus{
+    -fx-background-color: #ff051e;
+    -fx-cursor: hand;
+}
+
+.btnmenu{
+    -fx-background-color: #1ebeb1;
+    -fx-cursor: hand;
+}
+
+.btnmenu:hover{
+    -fx-background-color: #5eccc3;
+}
+
+.btnhapus:hover{
+    -fx-background-color: #f25a69;
+}
+
+.btnx{
+    -fx-background-color: #ff0018;
+    -fx-cursor: hand;
+    -fx-border: 1;
+}
+
+.btnx:hover{
+    -fx-background-color: #981824;
+}
+
+.btnlogout{
+     -fx-background-color: #1ebeb1;
+     -fx-cursor: hand;
+}
+.btnlogout:hover{
+    -fx-background-color: #5eccc3;
+    -fx-opacity: 50;
+}
+
+.btnclear{
+    -fx-background-color:  #ff051e;
+    -fx-cursor: hand;
+}
+
+.btnclear:hover{
+    -fx-background-color: #d9293a;
+}
+
+.btnadd{
+    -fx-background-color:  #00f75b;
+    -fx-cursor: hand;
+}
+
+.btnadd:hover{
+    -fx-background-color: #51b576;
+}
+
+.btnlihat{
+    -fx-background-color: #5ec4c4;
+    -fx-cursor: hand;
+}
+
+.btnlihat:hover{
+    -fx-background-color: #659c9c;
+}
+
+.btndetailjudul{
+    -fx-background-color: transparent;
+    -fx-font-family:"Gill Sans MT";
+    -fx-font-size: 30px;
+    -fx-text-fill: #ff2929;
+    -fx-font-weight: bold;
+}
+
+.btndetailharga {
+    -fx-background-color: transparent;
+    -fx-font-family: "Gill Sans MT";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff2929;
+}
+
+.btndetailtipe{
+    -fx-background-color: transparent;
+    -fx-font-family: "Gill Sans MT";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.btndetailberat{
+    -fx-background-color: transparent;
+    -fx-font-family: "Gill Sans MT";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+.btndetail{
+    -fx-background-color: transparent;
+    -fx-font-family: "Gill Sans MT";
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+}
+
+.table-view{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #000000;
+    -fx-border-radius: 0px;
+    -fx-padding: 0px;
+}
+
+
+.table-view .table-column{
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header .label{
+    -fx-font-family:"Gill Sans MT";
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #1ebeb1;
+    -fx-background-insets: 0 0 0 0;
+    -f-background-radius:8px 8px 0px 0px;
+}
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size:40px;
+}
+
+
